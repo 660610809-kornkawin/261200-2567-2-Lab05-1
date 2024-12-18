@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
 public class User {
-    private String name;
-    private LocalDate dob;
+    protected String name;
+    protected LocalDate dob;
 
 // contructor --> no parameter
     User(){
@@ -14,14 +14,6 @@ public class User {
     User(String name, int year , int month, int day){
         this.name = name;
         this.dob = LocalDate.of(year,month,day);
-    }
-
-    public String getName(){
-        return name;
-    }
-
-    public LocalDate getDob(){
-        return dob;
     }
 
     // Display user's name and birthday
